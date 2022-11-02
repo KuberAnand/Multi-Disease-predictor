@@ -8,9 +8,19 @@ from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
 
+def predict(values, dic):
+    if len(values) == 8:
+        model = pickle.load(open('models/diabetes.pkl','rb'))
+        values = np.asarray(values)
+        return model.predict(values.reshape(1, -1))[0]
+
 @app.route("/")
 def home():
     return render_template('home.html')
+
+@app.route("/diabetes", methods=['GET', 'POST'])
+def diabetesPage():
+    return render_template('diabetes.html')
 
 @app.route("/pneumonia", methods=['GET', 'POST'])
 def pneumoniaPage():
