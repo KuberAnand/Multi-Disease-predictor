@@ -1,15 +1,17 @@
-# [Pneumonia Detector](https://pneumoniadetector.azurewebsites.net)
+# [Multiple Disease Detector](https://pneumoniadetector.azurewebsites.net)
 
 ## About
 
-This webapp was developed using Flask Web Framework and is deployed on Microsoft Azure. The model used to predict the disease was trained on a large Dataset. All the links for datasets and the model used for model creation are mentioned below in this readme. The webapp can predict following Disease:
+This webapp was developed using Flask Web Framework and is deployed on Microsoft Azure. The model used to predict the disease was trained on a large Dataset. All the links for datasets and the model used for model creation are mentioned below in this readme. The webapp can predict following Diseases:
 
+- Diabetes
 - Pneumonia
 
 ## Model with their Accuracy of Prediction
 
 | Disease        | Type of Model            | Accuracy |
 | -------------- | ------------------------ | -------- |
+| Diabetes       | Machine Learning Model   | 98.25%   |
 | Pneumonia      | Deep Learning Model(CNN) | 95%      |
 
 
@@ -76,5 +78,5 @@ python app.py
 
 All the datasets were used from kaggle.
 
-
+- [Diabetes Dataset](https://www.kaggle.com/uciml/pima-indians-diabetes-database)
 - [Pneumonia Dataset](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
