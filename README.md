@@ -23,7 +23,7 @@ This webapp was developed using Flask Web Framework and is deployed on Microsoft
 ## Group Members
 - Group Rep : 
   [Kuber Anand](https://github.com/KuberAnand)
-  [Ishaan Taneja]
+  [Ishaan Taneja](https://github.com/ishaan089)
 
 
 ## Deployment Screnshots :
